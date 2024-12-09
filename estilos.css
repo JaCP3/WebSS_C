@@ -237,7 +237,6 @@ footer {
   overflow: hidden;
   transition: width 1s ease; /* Apertura inicial */
   padding-bottom: 20%;
-  margin-bottom: 20%;
 }
 
 .contenedor-imagenes.mostrar {

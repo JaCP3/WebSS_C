@@ -86,7 +86,7 @@
         titulo: "Fiesta de Fin de Año",
         fecha: "31 de Diciembre",
         descripcion: "Di adiós al año con un toque de misterio en nuestra Masquerade New Year’s Party. ¡Una noche de máscaras y momentos inolvidables!",
-        imagen: "./betrending_379472055_10469921_1706x960.jpg"
+        imagen: "./finA.jpeg"
 
       }
     };
