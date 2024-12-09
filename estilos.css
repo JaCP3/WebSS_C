@@ -236,6 +236,8 @@ footer {
   z-index: 999;
   overflow: hidden;
   transition: width 1s ease; /* Apertura inicial */
+  padding-bottom: 20%;
+  margin-bottom: 20%;
 }
 
 .contenedor-imagenes.mostrar {
@@ -345,6 +347,16 @@ footer {
   color: #333;
   margin-top: 8px;
 }
+.tarjeta-resumen input {
+  padding: 10px;
+  width: 95%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+  margin-top: 8px;
+}
 
 .formulario-compra button {
   padding: 12px 20px;
@@ -363,6 +375,7 @@ footer {
 
 /* Tarjeta resumen de compra */
 .tarjeta-resumen {
+  margin-bottom: 12%;
   margin-top: 20px;
   padding: 20px;
   background-color: #2b1f21;
@@ -742,4 +755,72 @@ footer {
 .map-abierto .map-card {
   opacity: 1;
   visibility: visible;
+}
+
+
+
+
+
+.main-container {
+  width: 60%;
+  margin: 0 auto;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.sub-container {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid rgba(51, 49, 49, 0.2);
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.181);
+  color: #fff;
+  text-align: justify;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+}
+
+.sub-container.expanded {
+  max-height: none;
+}
+
+.content {
+  max-height: 250px;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+
+.sub-container.expanded .content {
+  max-height: none;
+}
+
+.toggle-button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px;
+  transition: transform 0.2s;
+}
+
+.toggle-button:hover {
+  transform: translateX(-50%) scale(1.2);
+}
+
+/* Estilo para el icono */
+.icon {
+  display: inline-block;
+  font-size: 18px;
+  line-height: 1;
 }
