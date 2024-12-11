@@ -74,6 +74,8 @@
         titulo: "Fiesta de Inaguración",
         fecha: "Fecha: 7 de Diciembre",
         descripcion: "Disfruta con nosotros de nuestra inesperada inaguración al estilo Neon Party.",
+        imagen: "./neon_party.jpg"
+
       },
       disfraces: {
         titulo: "Fiesta de Navidad",
@@ -178,11 +180,4 @@
       }
     });
 
-    document.querySelectorAll('.toggle-button').forEach(button => {
-    button.addEventListener('click', () => {
-        const container = button.closest('.sub-container');
-        container.classList.toggle('expanded');
-        button.textContent = container.classList.contains('expanded') ? '▲' : '▼';
-    });
-});
-
+  
